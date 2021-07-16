@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  button {
+    @apply px-4 py-2 rounded shadow-md;
+  }
+}
+
+@layer utilities {
+  button.primary {@apply bg-blue-600 text-white;}
+  button.secondary {@apply bg-gray-700 text-white;}
+  button.default {@apply bg-gray-300 text-gray-800;}
+}
