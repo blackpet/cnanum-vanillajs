@@ -735,16 +735,8 @@ button {
   justify-content: center;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .gap-12 {
@@ -761,6 +753,16 @@ button {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
 
 .border-2 {
@@ -812,9 +814,9 @@ button {
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
+.bg-red-100 {
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
 }
 
 .bg-indigo-300 {
@@ -825,11 +827,6 @@ button {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-}
-
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -1041,6 +1038,11 @@ button.secondary {
 
   .md\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .md\:rounded-t {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
   }
 
   .md\:py-8 {
